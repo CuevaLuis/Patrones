@@ -4,8 +4,8 @@ public class MainSingleton {
 
 	public static void main(String[] args) {
 		
-		NewObject objeto1 = NewObject.getInstance("objeto 1");
-		NewObject objeto2 = NewObject.getInstance();
+		SingletonObject objeto1 = SingletonObject.getInstance("objeto 1");
+		SingletonObject objeto2 = SingletonObject.getInstance();
 		
 		
 		System.out.println(objeto1.getNombre());

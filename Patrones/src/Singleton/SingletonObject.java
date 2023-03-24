@@ -1,20 +1,20 @@
 package Singleton;
 
-public class NewObject {
+public class SingletonObject {
 	// Campos de clase
 	private String nombre;
-	private static NewObject instance;
+	private static SingletonObject instance;
 
 	// Constructores
-	private NewObject() {
+	private SingletonObject() {
 
 	}
 
 	// Metodos Getters and Setters
-	public static NewObject getInstance() {
+	public static SingletonObject getInstance() {
 
 		if (instance == null) {
-			instance = new NewObject();
+			instance = new SingletonObject();
 		}
 
 		instance.setNombre(null);
@@ -22,10 +22,10 @@ public class NewObject {
 		return instance;
 	}
 
-	public static NewObject getInstance(String nom) {
+	public static SingletonObject getInstance(String nom) {
 
 		if (instance == null) {
-			instance = new NewObject();
+			instance = new SingletonObject();
 		}
 		
 		instance.setNombre(nom);
